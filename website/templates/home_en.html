@@ -1,0 +1,19 @@
+{% extends 'layout_en.html' %}
+{% block content %}
+    <center>
+        <div class='bg-home-top content-section'>
+            <center>
+                <h1 class='home-title'>Affordable Healthcare/Salud Que Puedes Pagar</h1>
+                <h2 class='home-subtitle'>What would you like to search?</h2>
+                <h1 class='home-button-link'><a href="{{ url_for('search_en') }}">Search Clinics</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('medication_en') }}">Search Medications</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('other_en') }}">Rapid Search</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('events_en') }}">Health Events</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('documents_en') }}">Documents</a></h1> 
+           </center>
+        </div>
+    </center>
+    <div>
+        <p>We help you find accesible medical attention. We have Primary Care, Mental Health Services, and Dental Care. We also help you find medication programs at discounted prices. We also have many documents that will help you obtain the necessary medicines.</p>
+    </div>  
+{% endblock content %}

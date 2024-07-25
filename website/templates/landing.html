@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salud Que Puedes Pagar - Lang</title>
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/fABn5Ui.png" />
+    <script defer src="https://app.watchthem.live/pixel/4iPCeopAYm2klFiY"></script>
+    <style>
+        body {
+          background-image: url('https://i.imgur.com/QNZdPN3.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 5px solid #5f788a;
+            padding: 10px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #444444;
+        }
+        .home-subtitle{
+            font-size: large;
+            color: #7a7e81;
+            text-align: center;
+        }
+    </style>
+    <!-- Hotjar Tracking Code for https://www.saludquepueduespagar.org -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2988578,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+    <div class=center>
+            <center>
+                <h1>Affordable Healthcare/Salud Que Puedes Pagar</h1>
+                <h2 class = home-subtitle>Language Select/Selecci&oacute;n de Idioma</h2>
+                <h2><a href="{{ url_for('en') }}">Click Here for English</a></h2>
+                <h2><a href="{{ url_for('es') }}">Haga Clic Aqu&iacute; para Espa&ntilde;ol</a></h2>
+            </center>
+        </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'layout_es.html' %}
+{% block content %}
+    <center>
+        <div class='bg-home-top content-section'>
+            <center>
+                <h1 class='home-title'>Salud Que Puedes Pagar</h1>
+                <h2 class='home-subtitle'>¿Qué quiere bsucar?</h2>
+                <h1 class='home-button-link'><a href="{{ url_for('search_es') }}">Buscar clinicas</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('medication_es') }}">Buscar medicinas</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('other_es') }}">Búsqueda Rápida</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('events_es') }}">Eventos de Salud</a></h1>
+                <h1 class='home-button-link'><a href="{{ url_for('documents_es') }}">Documentos</a></h1>
+            </center>
+        </div>
+    </center>
+    <div>
+        <p>Le ayudamos a encontrar cuidado de salud a bajo costo. Contamos con recursos para atención primaria y salud mental y dental. También lo ayudamos a encontrar programas de medicamentos a precios descontados y proporcionamos acceso a documentos de los requisitos establecidos para elegibilidad de beneficios.</p>
+    </div>  
+{% endblock content %}

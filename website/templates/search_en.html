@@ -1,0 +1,42 @@
+{% extends 'layout_en.html' %}
+{% block content %}
+<div class="content-section-search">
+    <form method="POST" action="">
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Searcher</legend>
+            <p>Enter search type</p>
+            <div class="form-group">
+                {{ form.search_type.label(class='form-control-label') }}
+                {{ form.search_type(class='form-control form-control-lg') }}
+            </div>
+	    <p>Pick either Zip Code or City to search by</p>
+            <div class="form-group">
+                {{ form.city_search.label(class='form-control-label') }}
+                {{ form.city_search(class='form-control form-control-lg') }}
+            </div>
+            <div class="form-group">
+                {{ form.zip_search.label(class='form-control-label') }}
+                {{ form.zip_search(class='form-control form-control-lg') }}
+            </div>
+	    <p>Pick a service from the list below</p>
+        <p>Medical Search Type</p>
+            <div class="form-check">
+                {{ form.dental(class='form-check-input') }}
+                {{ form.dental.label(class='form-check-label') }}
+            </div>
+            <div class="form-check">
+                {{ form.mental(class='form-check-input') }}
+                {{ form.mental.label(class='form-check-label') }}
+            </div>
+            <div class="form-check">
+                {{ form.primary(class='form-check-input') }}
+                {{ form.primary.label(class='form-check-label') }}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

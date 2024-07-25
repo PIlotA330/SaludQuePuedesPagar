@@ -1,0 +1,14 @@
+{% extends 'layout_en.html' %}
+{% block content %}
+{% for facility in form_results %}
+    <div class='content-section-search'>
+        <h2>{{ facility.facility_name }}</h2>
+        <h4>City: {{ facility.city }}</h4>
+        <h4>Zip: {{ facility.zip }}</h4>
+        <h4>Address: {{ facility.address }}</h4>
+        <h4>Phone: {{ facility.phone }}</h4>
+        <h4>Services: {{ facility.services }}</h4>
+        <h4>Facility Type: {{ facility.facility_type }}</h4>
+    </div>
+{% endfor %}
+{% endblock content %}
